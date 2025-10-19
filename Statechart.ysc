@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:sgraph="http://www.yakindu.org/sct/sgraph/2.0.0">
   <sgraph:Statechart xmi:id="_lA-REKrrEfCpHOYs589k4Q" specification="// Use the event driven execution model.&#xA;// Switch to cycle based behavior&#xA;// by specifying '@CycleBased(200)'.&#xA;@EventDriven&#xA;&#xA;// Use @SuperSteps(yes) to enable&#xA;// super step semantics.&#xA;@SuperSteps(no)&#xD;&#xA;&#xA;&#xA;interface:&#xA;&#x9;// Define events and variables here. &#xA;&#x9;// Use CTRL + Space for content assist.&#xA;&#x9;in event Enter&#xA;&#x9;in event esc&#xA;&#x9;in event next&#xA;&#x9;var index_menu1: integer&#xA;&#x9;var index_menu2: integer&#x9;&#xA;&#x9;var index_menu3: integer" name="Statechart">
-    <regions xmi:id="_lBAGS6rrEfCpHOYs589k4Q" name="main region">
+    <regions xmi:id="_lBAGS6rrEfCpHOYs589k4Q" name="s">
       <vertices xsi:type="sgraph:Entry" xmi:id="_lBAGTKrrEfCpHOYs589k4Q">
         <outgoingTransitions xmi:id="_lBAGTarrEfCpHOYs589k4Q" target="_lBAGTqrrEfCpHOYs589k4Q"/>
       </vertices>
@@ -18,7 +18,7 @@
         <outgoingTransitions xmi:id="__M4kUKrrEfCpHOYs589k4Q" specification="esc / index_menu1=0" target="_lBAGWKrrEfCpHOYs589k4Q"/>
         <outgoingTransitions xmi:id="_zO8WMKrsEfCpHOYs589k4Q" specification="Enter" target="_wXLe4KrsEfCpHOYs589k4Q"/>
         <outgoingTransitions xmi:id="_14HX4KrsEfCpHOYs589k4Q" specification="next [index_menu2&lt;3] /index_menu2 ++" target="_6ES54KrrEfCpHOYs589k4Q"/>
-        <outgoingTransitions xmi:id="_ohZRkKrwEfCpHOYs589k4Q" specification="next [index_menu2&lt;3] / index_menu2=0" target="_6ES54KrrEfCpHOYs589k4Q"/>
+        <outgoingTransitions xmi:id="_ohZRkKrwEfCpHOYs589k4Q" specification="next [index_menu2==3] / index_menu2=0" target="_6ES54KrrEfCpHOYs589k4Q"/>
       </vertices>
       <vertices xsi:type="sgraph:State" xmi:id="_wXLe4KrsEfCpHOYs589k4Q" name="MENU 3" incomingTransitions="_zO8WMKrsEfCpHOYs589k4Q _3oNcgKrsEfCpHOYs589k4Q _CK-T0KrxEfCpHOYs589k4Q _N1A5EKrxEfCpHOYs589k4Q _UJegwKrxEfCpHOYs589k4Q">
         <outgoingTransitions xmi:id="_0woycKrsEfCpHOYs589k4Q" specification="esc / index_menu2=0" target="_6ES54KrrEfCpHOYs589k4Q"/>
